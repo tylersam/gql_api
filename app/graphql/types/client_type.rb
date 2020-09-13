@@ -1,11 +1,9 @@
 module Types
-  class LawyerType < Types::BaseObject
+  class ClientType < Types::BaseObject
     field :id, ID, null: false
     field :name, String, null: false
     field :ssn, String, null: false
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
-    field :cases, [CaseType], null: false
-    field :clients, [ClientType], null: false
   end
 end
