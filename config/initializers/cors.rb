@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'localhost:3001', 'gqlapi.tylersam.com'
+    origins 'localhost:3001', 'gqlclient.tylersam.com'
 
     resource '*',
       headers: :any,
